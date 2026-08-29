@@ -3,5 +3,5 @@ from dataclasses import dataclass
 @dataclass
 
 class Pruefungsleistung:
-    note: float
+    note: float | None  = None 
     

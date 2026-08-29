@@ -9,7 +9,7 @@ class Modul:
     name: str
     ects: int
     status: ModulStatus
-    pruefungsleistung: list[Pruefungsleistung] = field(default_factory=list)
+    pruefungsleistungen: list[Pruefungsleistung] = field(default_factory=list)
     startdatum: date | None = None
     abschlussdatum: date | None = None
 
