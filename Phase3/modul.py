@@ -9,6 +9,7 @@ class Modul:
     name: str
     ects: int
     status: ModulStatus
+    semester_nummer: int
     pruefungsleistungen: list[Pruefungsleistung] = field(default_factory=list)
     startdatum: date | None = None
     abschlussdatum: date | None = None
