@@ -7,6 +7,7 @@ from semester import Semester
 
 @dataclass
 class Studiengang:
+    """repräsentiert den gesamten Studiengang mit seinen Zielwerten uind der Liste der zugehörigen Semester"""
     name : str
     abschlussgrad : Abschlussgrad 
     gesamt_ects: int

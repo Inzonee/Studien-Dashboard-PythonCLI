@@ -16,6 +16,8 @@ class Modul:
 
     @property
     def bearbeitungsdauer_tage(self) -> int |None:
+        """Berechnet die Bearbeitungsdauer in Tagen aus der Differenz von
+        abschlussdatum und startdatum."""
         if self.startdatum is None or self.abschlussdatum is None:
             return None
         return (self.abschlussdatum - self.startdatum).days

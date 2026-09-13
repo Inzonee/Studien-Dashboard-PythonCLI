@@ -8,10 +8,14 @@ from modul_status import ModulStatus
 from pruefungsleistung import Pruefungsleistung
 
 class JsonModulRepository(ModulRepository):
+
+    """ """
     def __init__(self, dateipfad: str):
         self.dateipfad = Path(dateipfad)
 
     def lade_alle(self) -> list[Modul]:
+        """läd alle Module aus der JSON-Datei. Gibt eine leere liste zurück fals die datei noch nicht existiert."""
+
         if not self.dateipfad.exists():
             return []
         with self.dateipfad.open("r", encoding="utf-8") as datei:

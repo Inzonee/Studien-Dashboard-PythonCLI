@@ -1,21 +1,21 @@
 [
     {
-        "name": "Betriebssysteme, Rechnernetze und verteilte Systeme",
+        "name": "Einführung in die Programmierung mit Python",
         "ects": 5,
         "status": "abgeschlossen",
         "semester_nummer": 1,
-        "pruefungsleistungen": [{"note": 1.7}],
+        "pruefungsleistungen": [{"note": 2.3}],
         "startdatum": "2026-01-01",
-        "abschlussdatum": "2026-02-15"
+        "abschlussdatum": "2026-02-12"
     },
     {
-        "name": "Einführung in die Netzwerkforensik",
+        "name": "Einführung in Datenschutz und IT-Sicherheit",
         "ects": 5,
         "status": "abgeschlossen",
         "semester_nummer": 1,
-        "pruefungsleistungen": [{"note": 2.7}],
-        "startdatum": "2026-02-01",
-        "abschlussdatum": null
+        "pruefungsleistungen": [{"note": 2.3}],
+        "startdatum": "2026-02-12",
+        "abschlussdatum": "2026-03-22"
     },
     {
         "name": "Einführung in das wissenschaftliche Arbeiten für IT und Technik",
@@ -23,17 +23,35 @@
         "status": "abgeschlossen",
         "semester_nummer": 1,
         "pruefungsleistungen": [{"note": 2.0}],
-        "startdatum": "2026-02-01",
-        "abschlussdatum": null
+        "startdatum": "2026-03-22",
+        "abschlussdatum": "2026-04-26"
     },
     {
-        "name": "Einführung in die Programmierung mit Python",
+        "name": "Betriebssysteme, Rechnernetze und verteilte Systeme",
         "ects": 5,
         "status": "abgeschlossen",
         "semester_nummer": 1,
-        "pruefungsleistungen": [{"note": 2.3}],
-        "startdatum": "2026-01-01",
-        "abschlussdatum": "2026-02-07"
+        "pruefungsleistungen": [{"note": 1.7}],
+        "startdatum": "2026-04-22",
+        "abschlussdatum": "2026-05-29"
+    },
+    {
+        "name": "Einführung in die Netzwerkforensik",
+        "ects": 5,
+        "status": "abgeschlossen",
+        "semester_nummer": 1,
+        "pruefungsleistungen": [{"note": 2.7}],
+        "startdatum": "2026-05-29",
+        "abschlussdatum": "2026-06-7"
+    },
+    {
+        "name": "Mathematik Grundlagen I",
+        "ects": 5,
+        "status": "offen",
+        "semester_nummer": 2,
+        "pruefungsleistungen": [{"note": null}],
+        "startdatum": "2026-06-07",
+        "abschlussdatum": null
     },
     {
         "name": "Projekt: Objektorientierte und funktionale Programmierung mit Python",
@@ -41,8 +59,9 @@
         "status": "in_bearbeitung",
         "semester_nummer": 1,
         "pruefungsleistungen": [{"note": null}],
-        "startdatum": "2026-08-01",
+        "startdatum": "2026-08-07",
         "abschlussdatum": null
     }
+
 
 ]

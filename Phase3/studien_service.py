@@ -3,7 +3,14 @@ from modul_status import ModulStatus
 from datetime import date
 
 class StudienService:
+    """bündelt Berechnungen, die mehrere Domain-Objekte betreffen(Semeter, Module, Pruefungsleistungen) und daher 
+    nicht  in einer einzelnen DOmain Klase sinvoll untergebracht werden können. """
     def berechne_notendurchschnitt(self,studiengang: Studiengang) -> float | None:
+
+        """Berechnen Notendurschschnitt aus allen bewerteten Prüfungen(Nicht bewertete Leistungen werden ausgeschlossen)"""
+
+
+
         alle_noten = []
         for semester in studiengang.semester:
             for modul in semester.module:
@@ -15,6 +22,8 @@ class StudienService:
         return sum(alle_noten) / len(alle_noten)
 
     def berechne_tempo(self, studiengang: Studiengang) -> tuple[float|None,float| None]:
+        
+
         bisher_erreichte_ects = 0
         for semester in studiengang.semester:
             for module in semester.module:
@@ -42,6 +51,9 @@ class StudienService:
             benoetigtes_tempo = restliche_ects / verbleibende_monate
         return bisheriges_tempo, benoetigtes_tempo
     def berechne_fortschritt_prozent(self, studiengang: Studiengang) -> float:
+        """Berechnet den prozentualen Studienfortschritt: erreichte ECTS
+        aus abgeschlossenen Modulen im Verhaeltnis zu gesamt_ects."""
+
         bisher_erreichte_ects = 0
         for semester in studiengang.semester:
             for modul in semester.module:

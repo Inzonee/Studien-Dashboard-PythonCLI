@@ -4,6 +4,9 @@ from json_modul_repository import JsonModulRepository
 from studien_service import StudienService
 
 class StudiumDashboardApp:
+    """ANwendung Starten.Erzeugt alle
+    benoetigten Objekte (Repository, Service, Controller, CLI) und
+    verbindet sie miteinander."""
     def start(self) -> None:
         repository = JsonModulRepository("module.json")
         service = StudienService()
