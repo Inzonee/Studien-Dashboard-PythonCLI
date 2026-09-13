@@ -8,7 +8,7 @@ Prototypische Umsetzung eines Studien-Dashboards (Projekt: Objektorientierte und
 
 ## Installation
 1. Repository klonen:
-   git clone https://github.com/Inzonee/Studien-Dashboard-PythonCLI.git
+   `git clone https://github.com/Inzonee/Studien-Dashboard-PythonCLI.git`
 2. In den Ordner wechseln:
    cd Studien-Dashboard-PythonCLI/Phase3
 3. Programm starten:
