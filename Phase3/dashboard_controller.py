@@ -8,8 +8,7 @@ from datetime import date
 class DashboardController:
     """Vermittelt zwischen Repository/Service und
     der CLI. Baut aus den flach gespeicherten Modulen wieder eine
-    vollstaendige Studiengang-Struktur mit Semestern zusammen (schliesst
-    die im Phase2 Feedback genannte Repository/Service-Lücke)"""
+    vollstaendige Studiengang-Struktur mit Semestern zusammen"""
     def __init__(self, modul_repository: ModulRepository,studien_service: StudienService):
         self.modul_repository = modul_repository
         self.studien_service = studien_service
@@ -30,7 +29,7 @@ class DashboardController:
             abschlussgrad=Abschlussgrad.BACHELOR,
             gesamt_ects=180,
             startdatum=date(2026, 1, 1),
-            ziel_abschlussdatum=date(2029, 1, 1),
+            ziel_abschlussdatum=date(2028, 8, 1),
             ziel_notendurchschnitt=2.0,
             semester=semester_liste,
         )

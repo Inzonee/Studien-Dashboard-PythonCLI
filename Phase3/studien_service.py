@@ -3,8 +3,8 @@ from modul_status import ModulStatus
 from datetime import date
 
 class StudienService:
-    """bündelt Berechnungen, die mehrere Domain-Objekte betreffen(Semeter, Module, Pruefungsleistungen) und daher 
-    nicht  in einer einzelnen DOmain Klase sinvoll untergebracht werden können. """
+    """bündelt Berechnungen, die mehrere Domain-Objekte betreffen(Semester, Module, Pruefungsleistungen) und daher 
+    nicht  in einer einzelnen Domain Klase sinvoll untergebracht werden können. """
     def berechne_notendurchschnitt(self,studiengang: Studiengang) -> float | None:
 
         """Berechnen Notendurschschnitt aus allen bewerteten Prüfungen(Nicht bewertete Leistungen werden ausgeschlossen)"""
@@ -31,7 +31,7 @@ class StudienService:
                     bisher_erreichte_ects += module.ects
         heute = date.today()
 
-        # monate seit studienstart berrechnung
+        # monate seit studienstart berechnung
         vergangene_tage = (heute -studiengang.startdatum).days
         vergangene_monate = vergangene_tage / 30
 
@@ -44,7 +44,7 @@ class StudienService:
         # monate bis Zielabschluss
         verbleibende_tage = (studiengang.ziel_abschlussdatum - heute).days
         verbleibende_monate = verbleibende_tage / 30
-        if vergangene_monate <= 0:
+        if verbleibende_monate <= 0:
             bisheriges_tempo= None
         else:
             restliche_ects = studiengang.gesamt_ects - bisher_erreichte_ects

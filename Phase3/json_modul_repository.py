@@ -14,7 +14,7 @@ class JsonModulRepository(ModulRepository):
         self.dateipfad = Path(dateipfad)
 
     def lade_alle(self) -> list[Modul]:
-        """läd alle Module aus der JSON-Datei. Gibt eine leere liste zurück fals die datei noch nicht existiert."""
+        """lädt alle Module aus der JSON-Datei. Gibt eine leere liste zurück falls die datei noch nicht existiert."""
 
         if not self.dateipfad.exists():
             return []
