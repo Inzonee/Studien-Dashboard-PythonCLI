@@ -5,6 +5,7 @@ Prototypische Umsetzung eines Studien-Dashboards (Projekt: Objektorientierte und
 ## Voraussetzungen
 - Python 3.10 oder neuer
 - Keine externen Pakete nötig (nur Standardbibliothek)
+- Git installiert
 
 ## Installation
 1. Repository klonen:
